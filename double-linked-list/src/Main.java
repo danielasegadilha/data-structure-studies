@@ -39,9 +39,5 @@ public class Main {
         //Remove an element at the beginning of the list
         doubleList.removeFirst();
 
-
-
-
-
     }
 }
