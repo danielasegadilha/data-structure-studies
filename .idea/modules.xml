@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/data-structure-studies.iml" filepath="$PROJECT_DIR$/.idea/data-structure-studies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/double-linked-list/double-linked-list.iml" filepath="$PROJECT_DIR$/double-linked-list/double-linked-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graph/graph.iml" filepath="$PROJECT_DIR$/graph/graph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linked-list/linked-list.iml" filepath="$PROJECT_DIR$/linked-list/linked-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/three/three.iml" filepath="$PROJECT_DIR$/three/three.iml" />
+    </modules>
+  </component>
+</project>
