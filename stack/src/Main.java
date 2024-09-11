@@ -1,29 +1,21 @@
-import com.daniela.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Main {
     public static void main(String[] args) {
-        Stack stack = new Stack();
+        Deque<String> stack = new ArrayDeque<>();
 
-        stack.add(4);
-        stack.add(3);
-        stack.add(2);
-        stack.add(1);
-        stack.add(0);
-        stack.get(0);
-        stack.get(2);
+        //Add an element at the top of the stack
+        stack.addFirst("a");
+        stack.addFirst("l");
 
-        stack.printStack();
-        System.out.print(System.lineSeparator());
+        //Get an element at the top of the stack
+        System.out.println(stack.peekFirst());
 
-        stack.remove();
-        stack.printStack();
-        System.out.print(System.lineSeparator());
+        //Remove an element at the top of the stack
+        stack.removeFirst();
 
-        stack.set(10, 2);
-        stack.printStack();
-        System.out.print(System.lineSeparator());
-
-        stack.removeAll();
-        stack.printStack();
+        //Remove all the element of the stack
+        stack.clear();
     }
 }

@@ -4,7 +4,7 @@ public class Stack {
     Node top;
 
     // Method to add a new node at the top
-    public void add(int data) {
+    public void push(int data) {
         Node newNode = new Node(data);
         if (top != null) {
             newNode.previus = top;
@@ -23,14 +23,14 @@ public class Stack {
     }
 
     // Method to remove the top element
-    public void remove() {
+    public void pop() {
         if(top != null) {
             top = top.previus;
         }
     }
 
     // Method to remove the all elements
-    public void removeAll() {
+    public void popAll() {
         top = null;
     }
 
@@ -41,7 +41,6 @@ public class Stack {
             current = current.previus;
             i --;
         }
-        System.out.println(current.data);
         return current.data;
     }
 
