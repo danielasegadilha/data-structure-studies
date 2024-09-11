@@ -37,11 +37,21 @@ public class SinglyLinkedList {
     }
 
     // Method to remove the first element
-    public void removeFirst() {
-        if(head == null) {
-            System.out.println("The list is empty");
-        } else {
+    public void remove() {
+        if(head != null) {
             head = head.next;
         }
     }
+
+    // Method to remove the last element
+    public void removeLast() {
+        if (head != null) {
+            Node current = head;
+            while ((current.next).next != null) {
+                current = current.next;
+            }
+            current.next = null;
+        }
+    }
+
 }
