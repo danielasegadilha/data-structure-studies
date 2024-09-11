@@ -75,7 +75,7 @@ public class SinglyLinkedList {
             current = current.next;
             i --;
         }
-        System.out.println(current.data);
+
         return current.data;
     }
 
