@@ -20,5 +20,9 @@ public class Main {
 
         list.removeLast();
         list.printList();
+        System.out.print(System.lineSeparator());
+
+        list.removeAll();
+        list.printList();
     }
 }

@@ -45,13 +45,27 @@ public class SinglyLinkedList {
 
     // Method to remove the last element
     public void removeLast() {
-        if (head != null) {
-            Node current = head;
-            while ((current.next).next != null) {
-                current = current.next;
-            }
-            current.next = null;
+
+        if (head == null) {
+            return; // List is already empty, nothing to remove
         }
+
+        // Check if the list has only one element
+        if (head.next == null) {
+            head = null; // Remove the single element
+            return;
+        }
+
+        Node current = head;
+        while ((current.next).next != null) {
+            current = current.next;
+        }
+        current.next = null;
+    }
+
+    // Method to remove the last element
+    public void removeAll() {
+        head = null;
     }
 
 }
