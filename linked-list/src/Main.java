@@ -10,6 +10,8 @@ public class Main {
         list.add(2);
         list.add(1);
         list.add(0);
+        list.get(0);
+        list.get(2);
 
         list.printList();
         System.out.print(System.lineSeparator());
@@ -19,6 +21,10 @@ public class Main {
         System.out.print(System.lineSeparator());
 
         list.removeLast();
+        list.printList();
+        System.out.print(System.lineSeparator());
+
+        list.set(10, 2);
         list.printList();
         System.out.print(System.lineSeparator());
 

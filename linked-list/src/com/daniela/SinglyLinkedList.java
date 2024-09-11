@@ -63,9 +63,29 @@ public class SinglyLinkedList {
         current.next = null;
     }
 
-    // Method to remove the last element
+    // Method to remove the all elements
     public void removeAll() {
         head = null;
     }
 
+    // Method to get the n element, at i index
+    public int get(int i) {
+        Node current = head;
+        while (i != 0) {
+            current = current.next;
+            i --;
+        }
+        System.out.println(current.data);
+        return current.data;
+    }
+
+    // Method to update the n element, at i index
+    public void set(int newData, int i) {
+        Node current = head;
+        while (i != 0) {
+            current = current.next;
+            i --;
+        }
+        current.data = newData;
+    }
 }
